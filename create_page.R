@@ -6,7 +6,15 @@ library(stringr)
 files = list.files(pattern = ".Rmd$", recursive = T)
 
 make_tile <- function(path) {
+  #browser()
   yaml <- rmarkdown::yaml_front_matter(path)
+  yaml$title <- str_replace_all(
+    yaml$title, 
+    c(
+      "~(\\w+)~" = "<sub>\\1</sub>",
+      "_(\\w+)_" = "<span style='font-style: italic'>\\1</span>"
+    )
+  )
   
   link <- stringr::str_replace(path, "\\.Rmd", ".html")
   
@@ -44,8 +52,10 @@ make_tile <- function(path) {
   
   intro <- display_page %>% 
     rvest::html_node("#introduction") %>% 
-    rvest::html_node("p") %>% 
-    rvest::html_text()
+    rvest::html_nodes("p") %>% 
+    rvest::html_text() %>% 
+    glue_collapse(sep = "\n")
+  
   
   template = '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div class="card h-100">
