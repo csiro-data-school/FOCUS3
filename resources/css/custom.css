@@ -1,0 +1,57 @@
+.container {
+max-width: 95%;
+}
+
+.navbar > .container {
+  padding: 0;
+}
+
+.bg-blue {
+  background-color: #004B87;
+}
+
+.card-img-top {
+  object-fit: cover;
+  height: 15vh;
+  transition: height 0.7s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: height 0.7s;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -moz-transition: height 0.7s;
+  -moz-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: height 0.7s;
+  -o-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+.card-img-top:hover {
+  height: 100%;
+}
+
+/* unvisited link */
+a:link {
+color: #004B87;
+}
+
+/* visited link */
+a:visited {
+color: #004B87;
+}
+
+/* mouse over link */
+a:hover {
+color: #41B6E6;
+}
+
+/* selected link */
+a:active {
+color: #004B87;
+}
+
+.headshot {
+  float: right;
+  height: 6vh;
+  width: 6vh;
+  object-fit: cover;
+  border-radius: 50%;
+}
