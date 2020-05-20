@@ -22,3 +22,6 @@
 [submodule "Geetha"]
 	path = Geetha
 	url = https://github.com/GeethaPerera/final_project.git
+[submodule "Tina"]
+	path = Tina
+	url = https://github.com/tinarathjen/Data_school_report.git
