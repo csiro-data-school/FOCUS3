@@ -1,0 +1,24 @@
+[submodule "Sophia"]
+	path = Sophia
+	url = https://github.com/Sophia-006/finalprojectDataSchool.git
+[submodule "Tristan"]
+	path = Tristan
+	url = https://github.com/TristanLouthRobins/PSC_report_workflow.git
+[submodule "Shirleen"]
+	path = Shirleen
+	url = https://github.com/shirleen20/My_FOCUS_project.git
+[submodule "Gavin"]
+	path = Gavin
+	url = https://github.com/gchunter/sea_spurge_popgen.git
+[submodule "Felicity"]
+	path = Felicity
+	url = https://github.com/felicitymcennulty/Dataschool_poster.git
+[submodule "EliseG"]
+	path = EliseG
+	url = https://github.com/ea-guerette/N2O_comparison.git
+[submodule "Trijntje"]
+	path = Trijntje
+	url = https://github.com/T-Hughes/data_school_report.git
+[submodule "Geetha"]
+	path = Geetha
+	url = https://github.com/GeethaPerera/final_project.git

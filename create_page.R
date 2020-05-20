@@ -6,14 +6,9 @@ library(stringr)
 files = list.files(pattern = ".Rmd$", recursive = T)
 
 make_tile <- function(path) {
-  
   yaml <- rmarkdown::yaml_front_matter(path)
   
   link <- stringr::str_replace(path, "\\.Rmd", ".html")
-  
-  if(str_detect(path, "Steve|Caroline")) {
-    link <- str_replace_all(link, " ", "-")
-  }
   
   #Don't have an html file, or it's not named the same
   if(!file.exists(link)) {return(NULL)}
@@ -38,11 +33,14 @@ make_tile <- function(path) {
     pic <- pic_options[[1]] %>% rvest::html_attr("src")
   }
   
-  headshot <- glue::glue("{dirname(path)}/{yaml$photo}")
+  #headshot <- glue::glue("{dirname(path)}/{yaml$photo}")
   
-  if (str_detect(path, "Doug")) {
-    headshot <- str_remove(headshot, "resources/")
-  }
+  headshot <- display_page %>%
+    rvest::html_nodes("img") %>% 
+    keep(map(., ~rvest::html_attr(., "class")) == "photo") %>% 
+    as.character %>% 
+    str_replace('.+src=\"(.+)\".+', "\\1")
+  
   
   intro <- display_page %>% 
     rvest::html_node("#introduction") %>% 
