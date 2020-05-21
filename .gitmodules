@@ -25,3 +25,6 @@
 [submodule "Tina"]
 	path = Tina
 	url = https://github.com/tinarathjen/Data_school_report.git
+[submodule "Jose"]
+	path = Jose
+	url = https://github.com/bar736/Jose_FOCUS_project.git
