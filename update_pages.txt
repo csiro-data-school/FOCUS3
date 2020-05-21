@@ -1,3 +1,10 @@
+## Once only
+## Link repos
+# git submodule add github/link/repo.git FolderName
+## Recreate main page with new project
+# Rscript create_page.R
+
+# To update everything
 git submodule foreach git pull
 git commit -am "updating submodules"
 git push
