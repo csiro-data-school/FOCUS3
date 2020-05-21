@@ -6,7 +6,7 @@ library(stringr)
 files = list.files(pattern = ".Rmd$", recursive = T)
 
 make_tile <- function(path) {
-  #browser()
+  browser()
   yaml <- rmarkdown::yaml_front_matter(path)
   yaml$title <- str_replace_all(
     yaml$title, 
@@ -36,7 +36,7 @@ make_tile <- function(path) {
   
   #If no tagged frontpage image, just pick first non-photo image in html file
   if (any(is_frontpage)) {
-    pic <- pic_options[is_frontpage] %>% rvest::html_attr("src")
+    pic <- pic_options[is_frontpage][1] %>% rvest::html_attr("src")
   } else {
     pic <- pic_options[[1]] %>% rvest::html_attr("src")
   }
