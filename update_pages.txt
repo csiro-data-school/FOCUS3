@@ -7,4 +7,5 @@
 # To update everything
 git submodule foreach git pull
 git commit -am "updating submodules"
+Rscript create_page.R
 git push
