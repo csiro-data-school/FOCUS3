@@ -6,7 +6,7 @@ library(stringr)
 files = list.files(pattern = ".Rmd$", recursive = T)
 
 make_tile <- function(path) {
-  browser()
+  #browser()
   yaml <- rmarkdown::yaml_front_matter(path)
   yaml$title <- str_replace_all(
     yaml$title, 
