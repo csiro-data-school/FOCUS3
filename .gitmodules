@@ -28,3 +28,6 @@
 [submodule "Jose"]
 	path = Jose
 	url = https://github.com/bar736/Jose_FOCUS_project.git
+[submodule "Brenton"]
+	path = Brenton
+	url = https://github.com/Torokina/brenton_project_summary.git
