@@ -6,7 +6,6 @@ library(stringr)
 files = list.files(pattern = ".Rmd$", recursive = T)
 
 make_tile <- function(path) {
-  #browser()
   yaml <- rmarkdown::yaml_front_matter(path)
   yaml$title <- str_replace_all(
     yaml$title, 
@@ -17,6 +16,10 @@ make_tile <- function(path) {
   )
   
   link <- stringr::str_replace(path, "\\.Rmd", ".html")
+  
+  if (str_detect(link, "Cathrine")) {
+    link <- str_replace(link, "Cathrine Ingvordsen.html", "Cathrine-Ingvordsen.html")
+  }
   
   #Don't have an html file, or it's not named the same
   if(!file.exists(link)) {return(NULL)}
