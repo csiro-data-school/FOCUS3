@@ -31,3 +31,6 @@
 [submodule "Brenton"]
 	path = Brenton
 	url = https://github.com/Torokina/brenton_project_summary.git
+[submodule "Cathrine"]
+	path = Cathrine
+	url = https://github.com/cathheinz/DataSchoolFinalProject.git
