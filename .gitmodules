@@ -34,3 +34,9 @@
 [submodule "Cathrine"]
 	path = Cathrine
 	url = https://github.com/cathheinz/DataSchoolFinalProject.git
+[submodule "Elaheh"]
+	path = Elaheh
+	url = https://github.com/Ela2020-cpu/My_FOCUS_Project_EA.git
+[submodule "Ram"]
+	path = Ram
+	url = https://github.com/ram-ghimire/My_FOCUS_Project.git
