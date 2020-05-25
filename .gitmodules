@@ -40,3 +40,6 @@
 [submodule "Ram"]
 	path = Ram
 	url = https://github.com/ram-ghimire/My_FOCUS_Project.git
+[submodule "Nicole"]
+	path = Nicole
+	url = https://github.com/nicmur-bit/rmarkdown_project.git
