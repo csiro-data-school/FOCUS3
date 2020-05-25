@@ -21,6 +21,10 @@ make_tile <- function(path) {
     link <- str_replace(link, "Cathrine Ingvordsen.html", "Cathrine-Ingvordsen.html")
   }
   
+  if (str_detect(link, "Gavin")) {
+    link <- str_replace(link, "Data School Project_Gavin Hunter.html","Data-School-Project_Gavin-Hunter.html")
+  }
+  
   if (str_detect(link, "Elaheh") & str_detect(link, "Untitled")) {
     return(NULL)
   }
