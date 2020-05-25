@@ -7,9 +7,6 @@
 [submodule "Shirleen"]
 	path = Shirleen
 	url = https://github.com/shirleen20/My_FOCUS_project.git
-[submodule "Gavin"]
-	path = Gavin
-	url = https://github.com/gchunter/sea_spurge_popgen.git
 [submodule "Felicity"]
 	path = Felicity
 	url = https://github.com/felicitymcennulty/Dataschool_poster.git
