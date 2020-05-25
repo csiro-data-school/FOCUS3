@@ -21,6 +21,10 @@ make_tile <- function(path) {
     link <- str_replace(link, "Cathrine Ingvordsen.html", "Cathrine-Ingvordsen.html")
   }
   
+  if (str_detect(link, "Elaheh") & str_detect(link, "Untitled")) {
+    return(NULL)
+  }
+  
   #Don't have an html file, or it's not named the same
   if(!file.exists(link)) {return(NULL)}
   
