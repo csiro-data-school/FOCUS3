@@ -43,3 +43,6 @@
 [submodule "Karen"]
 	path = Karen
 	url = https://github.com/Karen-Aitken/Data_School_Focus_project.git
+[submodule "Gavin"]
+	path = Gavin
+	url = https://github.com/gchunter/my_focus_project.git
