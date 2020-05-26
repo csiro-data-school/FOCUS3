@@ -88,6 +88,21 @@ make_tile <- function(path) {
       </div>
     </div>'
   
+  if (str_detect(link, "Yuwan")) {
+    template = '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+      <div class="card h-100">
+        <a href="{link}" target="_blank"><img class="card-img-top" src="{pic}" alt=""></a>
+        <div class="card-body">
+          <h4 class="card-title">
+            <a href="{link}" target="_blank">{yaml$author}</a>
+            <img class="headshot" src="{headshot}" style="object-position: 50% 60%">
+          </h4>
+          <p class="card-text">{yaml$title}<hr/> <small>{intro}</small></p>
+        </div>
+      </div>
+    </div>'
+  }
+  
   glue::glue(template)
 }
 

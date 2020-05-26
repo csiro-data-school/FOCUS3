@@ -1,0 +1,11 @@
+---
+title: Would Australian accept technological interventions for a large-scale ecological restoration?
+
+author:  Yuwan Malakar
+affiliation: Land and Water # Or group/team
+photo: resources/img/YM.png
+
+output: DSreport::project_summary
+---
+
+This document currently contains data that is not to be made publically available.
