@@ -93,6 +93,8 @@ make_tile <- function(path) {
 
 tiles <- map(files, make_tile) %>% compact() %>% glue::glue_collapse()
 
+tiles <- str_c(tiles, glue_collapse(readLines("Megan/tile.html")))
+
 template <- xml2::read_html("template.html") %>% as.character()
 
 html <- glue::glue(template)
