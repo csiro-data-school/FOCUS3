@@ -46,3 +46,6 @@
 [submodule "Gavin"]
 	path = Gavin
 	url = https://github.com/gchunter/my_focus_project.git
+[submodule "Sam"]
+	path = Sam
+	url = https://github.com/Kup007/My_project.git
