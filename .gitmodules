@@ -49,3 +49,6 @@
 [submodule "Sam"]
 	path = Sam
 	url = https://github.com/Kup007/My_project.git
+[submodule "Lucia"]
+	path = Lucia
+	url = https://github.com/luciadon/final_project.git
