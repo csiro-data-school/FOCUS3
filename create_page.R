@@ -68,6 +68,12 @@ make_tile <- function(path) {
     glue_collapse(sep = "\n")
   
   
+  # Tristan had to make it not self-contained
+  if (str_detect(link, "Tristan")) {
+    pic <- glue::glue("{dirname(path)}/{pic}")
+    headshot <- glue::glue("{dirname(path)}/{headshot}")
+  }
+  
   template = '<div class="col-lg-3 col-md-4 col-sm-6 mb-4">
       <div class="card h-100">
         <a href="{link}" target="_blank"><img class="card-img-top" src="{pic}" alt=""></a>
