@@ -43,7 +43,9 @@ make_tile <- function(path) {
     is.na() %>% 
     not()
   
-  
+    if (str_detect(link, "Derek")) {
+    is_frontpage <- c(F,F,F,F,F,T)
+  }
   
   #If no tagged frontpage image, just pick first non-photo image in html file
   if (any(is_frontpage)) {
@@ -51,6 +53,8 @@ make_tile <- function(path) {
   } else {
     pic <- pic_options[[1]] %>% rvest::html_attr("src")
   }
+  
+
   
   #headshot <- glue::glue("{dirname(path)}/{yaml$photo}")
   
